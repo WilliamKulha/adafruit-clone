@@ -51,3 +51,170 @@
 .product-card:hover {
   cursor: pointer;
 }
+
+@media #{$desktopMedium} {
+  #product-display {
+    width: $medSize;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    height: auto;
+    grid-gap: 5px;
+    
+    img {
+      width: 480px;
+      height: 360px;
+    }
+    
+    #featured {
+      display: grid;
+      grid-column: 1/4;
+      grid-template-columns: 50% 50%;
+      grid-row: 1;
+      grid-gap: 5px;
+      img {
+        width: 480px;
+        height: 360px;
+      }
+    }
+    .first-feature {
+      grid-column: 1;
+    }
+    .sceond-feature {
+      grid-column: 2;
+      margin-right: 0;
+    }
+    .col-1 {
+      grid-column: 1;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .col-2 {
+      grid-column: 2;
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+  
+  .lead-product {
+    .product-description {
+      width: 480px;
+    }
+  }
+  .product-card {
+    margin-left: 0;
+
+    .product-description {
+      width: 480px;
+    }
+  }
+}
+
+@media #{$desktopSmall} {
+  #product-display {
+    width: $smSize;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    height: auto;
+    grid-gap: 5px;
+    
+    img {
+      width: 354px;
+      height: 265px;
+    }
+    
+    #featured {
+      display: grid;
+      grid-column: 1/4;
+      grid-template-columns: 50% 50%;
+      grid-row: 1;
+      grid-gap: 5px;
+      img {
+        width: 354px;
+        height: 265px;
+      }
+    }
+    .first-feature {
+      grid-column: 1;
+    }
+    .sceond-feature {
+      grid-column: 2;
+      margin-right: 0;
+    }
+    .col-1 {
+      grid-column: 1;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .col-2 {
+      grid-column: 2;
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+  
+  .lead-product {
+    .product-description {
+      width: 354px;
+    }
+  }
+  .product-card {
+    margin-left: 0;
+
+    .product-description {
+      width: 354px;
+    }
+  }
+
+
+}
+
+@media #{$tablet} {
+  #product-display {
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-description {
+      width: 100%;
+      background-color: $descriptionBackgroundDarker;
+    }
+    
+    #featured {
+      display: flex;
+      flex-flow: column nowrap;
+      img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+      }
+      .product-description {
+        width: 100%;
+        background-color: $descriptionBackgroundDarker;
+      }
+    }
+
+    .col-1 {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      margin-left: 0;
+
+    }
+    .col-2 {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
