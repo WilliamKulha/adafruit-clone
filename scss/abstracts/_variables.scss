@@ -2,3 +2,16 @@ $black: #000;
 $pageBlue: #00a7e9;
 $nunito: 'Nunito', sans-serif;
 $border :  1px solid #00a7e9;
+$biggestSize: 1300px;
+$footerUlHeightFull: 335px;
+
+
+//Media Query Settings
+
+//all that changes is the max width of page column
+$desktopMedium: "only screen and (max-width : 1360px)";
+
+//max width of column, search bar collapse, products two columns
+$desktopSmall: "only screen and (max-width : 1023px)";
+
+$tablet: "only screen and (max-width : 767px)";
