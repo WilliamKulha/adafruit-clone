@@ -21,6 +21,7 @@
 
   img {
     position:absolute;
+    width:100%;
   }
   img:nth-child(5) {
     animation: xfade 120s 0s infinite;
@@ -60,6 +61,31 @@
 
   a:hover {
     cursor: pointer;
+  }
+}
+
+@media #{$desktopMedium} {
+
+  #carousel-area {
+    margin-bottom: 20.7em;
+  }
+}
+
+@media #{$desktopSmall} {
+
+  #carousel-area {
+    margin-bottom: 15.5em;
+  }
+}
+
+@media #{$tablet} {
+
+  #carousel-area {
+    display: none;
+  }
+
+  #carousel-news {
+    display:none;
   }
 }
 
