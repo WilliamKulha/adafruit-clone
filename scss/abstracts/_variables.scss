@@ -3,15 +3,21 @@ $pageBlue: #00a7e9;
 $nunito: 'Nunito', sans-serif;
 $border :  1px solid #00a7e9;
 $biggestSize: 1300px;
+$medSize: 980px;
+$smSize: 728px;
 $footerUlHeightFull: 335px;
+$descriptionBackgroundNormal: rgba(0,0,0,.7);
+$descriptionBackgroundDarker: rgba(0,0,0,.9);
+
 
 
 //Media Query Settings
 
-//all that changes is the max width of page column
-$desktopMedium: "only screen and (max-width : 1360px)";
+//max width of page column as well as drop to two columns.
+$desktopMedium: "only screen and (max-width : 1365px)";
 
-//max width of column, search bar collapse, products two columns
+//max width of column, search bar collapse, products two columns smaller
 $desktopSmall: "only screen and (max-width : 1023px)";
 
+//navbar switch single column no margins. footer loses right column.
 $tablet: "only screen and (max-width : 767px)";
