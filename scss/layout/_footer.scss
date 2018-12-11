@@ -8,7 +8,7 @@
 #footer {
   display: grid;
   grid-template-columns: 640px 640px;
-  width: 1300px;
+  width: $biggestSize;
   margin: 10px auto;
 }
 
@@ -70,5 +70,60 @@
   #seals {
     width: 640px;
     height: 46px;
+  }
+}
+
+@media #{$desktopMedium} {
+  #footer {
+    width: $medSize;
+    display: grid;
+    grid-template-columns: 480px 480px;
+  }
+  .col-left {
+    .wrapped-guy {
+      margin-top: 70px;
+    }
+  }
+  .col-right {
+    #seals {
+      width: 480px;
+      height: 35.17px;
+    }
+  }
+}
+
+@media #{$desktopSmall} {
+  #footer {
+    width: $smSize;
+    display: grid;
+    grid-template-columns: 250px 480px;
+  }
+  .col-left {
+    .wrapped-guy {
+      margin-top: 70px;
+    }
+  }
+  .col-right {
+    #seals {
+      width: 480px;
+      height: 35.17px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  #footer {
+    width: 100%;
+    display: flex;
+
+  }
+  .col-left {
+    margin-left: 5px;
+    .wrapped-guy {
+      margin-top: 70px;
+    }
+  }
+  .col-right {
+    display:none;
   }
 }
